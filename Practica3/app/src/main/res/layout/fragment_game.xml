@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context="dadm.scaffold.counter.GameFragment">
+
+    <ImageView
+        android:id="@+id/fondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fondo_juego_rojo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/gameView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <dadm.scaffold.engine.StandardGameView
+        android:id="@+id/gameView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        layout="@layout/view_joystick"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-16dp" />
+
+    <Button
+        android:id="@+id/btn_play_pause"
+        android:layout_width="95dp"
+        android:layout_height="44dp"
+        android:layout_gravity="top|right"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bot_vacio"
+        android:fontFamily="@font/rubik_mono_one"
+        android:text="pausa"
+        android:textColor="#F3EFEF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/vida5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/vida4"
+        android:layout_width="52dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/heart"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/vida5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/vida3"
+        app:layout_constraintTop_toTopOf="@+id/gameView" />
+
+    <ImageView
+        android:id="@+id/vida2"
+        android:layout_width="52dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/heart"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/vida3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/vida1"
+        app:layout_constraintTop_toTopOf="@+id/gameView" />
+
+    <ImageView
+        android:id="@+id/vida5"
+        android:layout_width="52dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/heart"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/btn_play_pause"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/vida4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/vida1"
+        android:layout_width="52dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/heart"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/vida2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gameView" />
+
+    <ImageView
+        android:id="@+id/vida3"
+        android:layout_width="52dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/heart"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/vida4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/vida2"
+        app:layout_constraintTop_toTopOf="@+id/gameView" />
+
+    <TextView
+        android:id="@+id/txt_Score"
+        android:layout_width="379dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/rubik_mono_one"
+        android:text="Puntuacion"
+        android:textColor="#F4F4F4"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    tools:context=".GameActivity">
+
+    <TextView
+        android:id="@+id/nomJug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/actor"
+        android:text="Nombre del jugador"
+        android:textAllCaps="true"
+        android:textColor="#989898"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/crono"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Chronometer
+        android:id="@+id/crono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/actor"
+        android:textAllCaps="true"
+        android:textColor="#989898"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/nomJug"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/acertadasPreguntas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/actor"
+        android:text="Preguntas acertadas"
+        android:textAllCaps="true"
+        android:textColor="#989898"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/currentPreguntas"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomJug" />
+
+    <TextView
+        android:id="@+id/currentPreguntas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/actor"
+        android:text="Preguntas que llevas"
+        android:textAllCaps="true"
+        android:textColor="#989898"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/acertadasPreguntas"
+        app:layout_constraintTop_toBottomOf="@+id/nomJug" />
+
+    <RelativeLayout
+        android:id="@+id/layu"
+        android:layout_width="412dp"
+        android:layout_height="547dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acertadasPreguntas"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/botEjemplo"
+        android:layout_width="100dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="104dp"
+        android:background="@drawable/boton"
+        android:fontFamily="@font/actor"
+        android:text="Comenzar"
+        android:textColor="#989898"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    tools:context=".Configuracion">
+
+    <RadioGroup
+        android:id="@+id/numPreguntas"
+        android:layout_width="172dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto1">
+
+        <RadioButton
+            android:id="@+id/cincoPreg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/actor"
+            android:text="5 preguntas"
+            android:textAllCaps="true"
+            android:textColor="#989898" />
+
+        <RadioButton
+            android:id="@+id/diezPreg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/actor"
+            android:text="10 preguntas"
+            android:textAllCaps="true"
+            android:textColor="#989898" />
+
+        <RadioButton
+            android:id="@+id/quincePreg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/actor"
+            android:text="15 preguntas"
+            android:textAllCaps="true"
+            android:textColor="#989898" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/texto1"
+        android:layout_width="334dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/actor"
+        android:text="Selecciona cuantas preguntas quieres que tenga la partida"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#989898"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputNombre"
+        android:layout_width="348dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/boton"
+        android:ems="10"
+        android:fontFamily="@font/actor"
+        android:inputType="textPersonName"
+        android:textColor="#989898"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto2" />
+
+    <TextView
+        android:id="@+id/texto2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/actor"
+        android:text="Introduce tu nombre"
+        android:textAllCaps="true"
+        android:textColor="#989898"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numPreguntas" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:clickable="true"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputNombre"
+        app:layout_constraintVertical_bias="0.973"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+</androidx.constraintlayout.widget.ConstraintLayout>

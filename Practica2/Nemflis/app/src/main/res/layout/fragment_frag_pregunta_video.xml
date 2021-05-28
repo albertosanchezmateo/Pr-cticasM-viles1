@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    tools:context=".FragPreguntaVideo">
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <VideoView
+            android:id="@+id/videoEnunciado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/botRVideo1"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/boton"
+        android:fontFamily="@font/actor"
+        android:text="Respuesta 1"
+        android:textColor="#989898"
+        app:layout_constraintEnd_toStartOf="@+id/botRVideo2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoPVideo" />
+
+    <Button
+        android:id="@+id/botRVideo2"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/boton"
+        android:fontFamily="@font/actor"
+        android:text="Respuesta 2"
+        android:textColor="#989898"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botRVideo1"
+        app:layout_constraintTop_toBottomOf="@+id/textoPVideo" />
+
+    <Button
+        android:id="@+id/botRVideo3"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/boton"
+        android:fontFamily="@font/actor"
+        android:text="Respuesta 3"
+        android:textColor="#989898"
+        app:layout_constraintEnd_toStartOf="@+id/botRVideo4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botRVideo1" />
+
+    <Button
+        android:id="@+id/botRVideo4"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/boton"
+        android:fontFamily="@font/actor"
+        android:text="Respuesta 4"
+        android:textColor="#989898"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botRVideo3"
+        app:layout_constraintTop_toBottomOf="@+id/botRVideo2" />
+
+    <TextView
+        android:id="@+id/textoPVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/anton"
+        android:text="¿A qué pelicula pertenece esta escena?"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame_layout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

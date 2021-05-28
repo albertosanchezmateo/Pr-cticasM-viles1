@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    tools:context=".FragPreguntaAudio">
+
+    <ImageButton
+        android:id="@+id/botPlay"
+        android:layout_width="47dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/boton"
+        android:src="@android:drawable/ic_media_play"
+        app:layout_constraintEnd_toStartOf="@+id/botPause"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/botPause"
+        android:layout_width="47dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/boton"
+        android:src="@android:drawable/ic_media_pause"
+        app:layout_constraintEnd_toStartOf="@+id/botStop"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botPlay"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/botStop"
+        android:layout_width="46dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/boton"
+        android:src="@android:drawable/ic_media_previous"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botPause"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botRAudio2"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/boton"
+        android:fontFamily="@font/actor"
+        android:text="respuesta 2"
+        android:textColor="#989898"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botRAudio1"
+        app:layout_constraintTop_toBottomOf="@+id/t_viewAudio" />
+
+    <Button
+        android:id="@+id/botRAudio1"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/boton"
+        android:fontFamily="@font/actor"
+        android:text="respuesta 1"
+        android:textColor="#989898"
+        app:layout_constraintEnd_toStartOf="@+id/botRAudio2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_viewAudio" />
+
+    <Button
+        android:id="@+id/botRAudio4"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/boton"
+        android:fontFamily="@font/actor"
+        android:text="respuesta 4"
+        android:textColor="#989898"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botRAudio3"
+        app:layout_constraintTop_toBottomOf="@+id/botRAudio2" />
+
+    <Button
+        android:id="@+id/botRAudio3"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/boton"
+        android:fontFamily="@font/actor"
+        android:text="respuesta 3"
+        android:textColor="#989898"
+        app:layout_constraintEnd_toStartOf="@+id/botRAudio4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botRAudio1" />
+
+    <TextView
+        android:id="@+id/t_viewAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/anton"
+        android:text="¿A que pelicula/saga pertenece esta musica?"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botPause" />
+</androidx.constraintlayout.widget.ConstraintLayout>
