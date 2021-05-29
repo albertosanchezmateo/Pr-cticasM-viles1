@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.MediaController;
+import android.widget.TextView;
 import android.widget.VideoView;
 
 public class FragPreguntaVideo extends Fragment {
@@ -19,6 +20,7 @@ public class FragPreguntaVideo extends Fragment {
     private FragPVideoListener listener;
     private Context contexto;
 
+    TextView enunciadoTexto;
     VideoView enunciado;
     String path;
 

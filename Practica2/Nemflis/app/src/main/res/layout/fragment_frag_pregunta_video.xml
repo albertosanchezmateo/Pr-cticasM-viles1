@@ -85,7 +85,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/anton"
-        android:text="¿A qué pelicula pertenece esta escena?"
+        android:text="¿Cómo termina esta jugada?"
         android:textAllCaps="true"
         android:textColor="#FFFFFF"
         android:textSize="18sp"

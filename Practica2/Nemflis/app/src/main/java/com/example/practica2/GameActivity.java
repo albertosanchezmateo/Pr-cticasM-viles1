@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class GameActivity extends AppCompatActivity implements FragPreguntasTexto.FragPTextoListener, FragPreguntaVideo.FragPVideoListener, FragPreguntaAudio.FragPAudioListener {
+public class GameActivity extends AppCompatActivity implements FragPreguntasTexto.FragPTextoListener, FragPreguntaVideo.FragPVideoListener, FragPreguntaAudio.FragPAudioListener, FragPreguntaImagen.FragPImagenListener {
 
     TextView nomJug, currentPreguntas, acertadasPreguntas;
     Button botComenzar;
@@ -30,6 +30,7 @@ public class GameActivity extends AppCompatActivity implements FragPreguntasText
     FragPreguntasTexto fpt;
     FragPreguntaVideo fpv;
     FragPreguntaAudio fpa;
+    FragPreguntaImagen fpi;
 
     int fragmentoActual = -1;
     String nombreJugador;
@@ -97,7 +98,8 @@ public class GameActivity extends AppCompatActivity implements FragPreguntasText
         String path8 = "android.resource://" + getPackageName() + "/" + R.raw.potter;
         String path9 = "android.resource://" + getPackageName() + "/" + R.raw.piratas;
         String path10 = "android.resource://" + getPackageName() + "/" + R.raw.cazafantasmas;
-        Pregunta p1 = new Pregunta(0, "¿A que se dedica Salvatore cuando es adulto en la pelicula Cinema Paradiso?", "Reportero", "Director de cine", "Arquitecto", "Fotógrafo", "Director de cine");
+        int path11 = R.drawable.morgana;
+        /*Pregunta p1 = new Pregunta(0, "¿A que se dedica Salvatore cuando es adulto en la pelicula Cinema Paradiso?", "Reportero", "Director de cine", "Arquitecto", "Fotógrafo", "Director de cine");
         Pregunta p2 = new Pregunta(0, "¿Quién interpreta a Jimmy en la pelicula Pulp Fiction?", "Samuel L Jackson", "John Travolta", "Quentin Tarantino", "Bruce Willis", "Quentin Tarantino");
         Pregunta p3 = new Pregunta(0, "¿Qué pelicula de ciencia ficcion postapocaliptica ha protagonizado Tom Hardy?", "Mad Max", "Venom", "El caballero oscuro", "Seven", "Mad Max");
         Pregunta p4 = new Pregunta(0, "¿Con que pelicula ganó un Óscar Leonardo Di Caprio?", "Titanic", "Django: Desencadenado", "El Renacido", "El lobo de Wall street", "El Renacido");
@@ -116,9 +118,10 @@ public class GameActivity extends AppCompatActivity implements FragPreguntasText
         Pregunta p17 = new Pregunta(2, path7, "La vida de Brian", "Shrek", "Los caballeros de la mesa cuadrada", "El sentido de la vida", "La vida de Brian");
         Pregunta p18 = new Pregunta(2, path8, "Matilda", "Narnia", "Harry Potter", "Polar Express", "Harry Potter");
         Pregunta p19 = new Pregunta(2, path9, "Indiana Jones", "Piratas del Caribe", "Los Vengadores", "Fast & Furious", "Piratas del Caribe");
-        Pregunta p20 = new Pregunta(2, path10, "GhostBusters ", "Atrapado en el tiempo", "Gordy", "Misión Imposible", "GhostBusters");
+        Pregunta p20 = new Pregunta(2, path10, "GhostBusters ", "Atrapado en el tiempo", "Gordy", "Misión Imposible", "GhostBusters");*/
+        Pregunta p21 = new Pregunta("asfdagagadgadgfasfas", path11, path11, path11,path11, "1", 3);
 
-        baseDeDatos.preguntaDao().insert(p1);
+        /*baseDeDatos.preguntaDao().insert(p1);
         baseDeDatos.preguntaDao().insert(p2);
         baseDeDatos.preguntaDao().insert(p3);
         baseDeDatos.preguntaDao().insert(p4);
@@ -137,7 +140,8 @@ public class GameActivity extends AppCompatActivity implements FragPreguntasText
         baseDeDatos.preguntaDao().insert(p17);
         baseDeDatos.preguntaDao().insert(p18);
         baseDeDatos.preguntaDao().insert(p19);
-        baseDeDatos.preguntaDao().insert(p20);
+        baseDeDatos.preguntaDao().insert(p20);*/
+        baseDeDatos.preguntaDao().insert(p21);
     }
 
     public void nuevaPregunta(){
@@ -145,14 +149,22 @@ public class GameActivity extends AppCompatActivity implements FragPreguntasText
         int idPregunta = rand.nextInt(listaPreguntas.size());
 
         int codigoFragmento; //0 para texo, 1 para video, 2 para audio
-        String enunciado, r1, r2, r3, r4, rC;
-
+        String enunciado, r1 = "", r2 = "", r3 = "", r4 = "", rC, respuestaCorrecta = "";
+        int ruta1 = 0,ruta2 = 0,ruta3 = 0,ruta4 = 0;
         codigoFragmento = listaPreguntas.get(idPregunta).getTipoPregunta();
         enunciado = listaPreguntas.get(idPregunta).getEnunciado();
-        r1 = listaPreguntas.get(idPregunta).getRespuesta1();
-        r2 = listaPreguntas.get(idPregunta).getRespuesta2();
-        r3 = listaPreguntas.get(idPregunta).getRespuesta3();
-        r4 = listaPreguntas.get(idPregunta).getRespuesta4();
+        if(codigoFragmento == 3){
+            ruta1 = listaPreguntas.get(idPregunta).getRuta1();
+            ruta2 = listaPreguntas.get(idPregunta).getRuta2();
+            ruta3 = listaPreguntas.get(idPregunta).getRuta3();
+            ruta4 = listaPreguntas.get(idPregunta).getRuta4();
+        }else{
+            r1 = listaPreguntas.get(idPregunta).getRespuesta1();
+            r2 = listaPreguntas.get(idPregunta).getRespuesta2();
+            r3 = listaPreguntas.get(idPregunta).getRespuesta3();
+            r4 = listaPreguntas.get(idPregunta).getRespuesta4();
+        }
+
         rC = listaPreguntas.get(idPregunta).getRespuestaCorr();
 
         listaPreguntas.remove(idPregunta);
@@ -168,6 +180,9 @@ public class GameActivity extends AppCompatActivity implements FragPreguntasText
                 case 2:
                     transicionarAudio(enunciado, r1, r2, r3, r4, rC);
                     break;
+                case 3:
+                    transicionarImagen(enunciado, ruta1, ruta2, ruta3, ruta4, respuestaCorrecta);
+                    break;
             }
         }else if(fragmentoActual == 0){
             switch(codigoFragmento){
@@ -180,6 +195,9 @@ public class GameActivity extends AppCompatActivity implements FragPreguntasText
                     break;
                 case 2:
                     transicionarAudio(enunciado, r1, r2, r3, r4, rC);
+                    break;
+                case 3:
+                    transicionarImagen(enunciado, ruta1, ruta2, ruta3, ruta4, respuestaCorrecta);
                     break;
             }
         }else if(fragmentoActual == 1){
@@ -194,8 +212,11 @@ public class GameActivity extends AppCompatActivity implements FragPreguntasText
                 case 2:
                     transicionarAudio(enunciado, r1, r2, r3, r4, rC);
                     break;
+                case 3:
+                    transicionarImagen(enunciado, ruta1, ruta2, ruta3, ruta4, respuestaCorrecta);
+                    break;
             }
-        }else{
+        }else if(fragmentoActual == 2){
             fpa.mediaplayer.stop();
             switch(codigoFragmento){
                 case 0:
@@ -206,6 +227,25 @@ public class GameActivity extends AppCompatActivity implements FragPreguntasText
                     break;
                 case 2:
                     fpa.nuevaPreguntaAudio(enunciado, r1, r2, r3, r4, rC);
+                    fragmentoActual = codigoFragmento;
+                    break;
+                case 3:
+                    transicionarImagen(enunciado, ruta1, ruta2, ruta3, ruta4, respuestaCorrecta);
+                    break;
+            }
+        }else{
+            switch(codigoFragmento){
+                case 0:
+                    transicionarTexto(enunciado, r1, r2, r3, r4, rC);
+                    break;
+                case 1:
+                    transicionarVideo(enunciado, r1, r2, r3, r4, rC);
+                    break;
+                case 2:
+                    transicionarAudio(enunciado, r1, r2, r3, r4, rC);
+                    break;
+                case 3:
+                    fpi.nuevaPreguntaImagen(enunciado,ruta1,ruta2,ruta3,ruta4,respuestaCorrecta);
                     fragmentoActual = codigoFragmento;
                     break;
             }
@@ -237,6 +277,14 @@ public class GameActivity extends AppCompatActivity implements FragPreguntasText
         transaccion.commitNow();
         fpa.nuevaPreguntaAudio(enunciado, r1, r2, r3, r4, rC);
         fragmentoActual = 2;
+    }
+    public void transicionarImagen(String enunciado, int r1, int r2,int r3,int r4,String rC){
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction transaccion = fragmentManager.beginTransaction();
+        transaccion.replace(R.id.layu, fpi);
+        transaccion.commitNow();
+        fpi.nuevaPreguntaImagen(enunciado, r1, r2, r3, r4, rC);
+        fragmentoActual = 3;
     }
 
     public void terminarPartida(){
@@ -289,6 +337,21 @@ public class GameActivity extends AppCompatActivity implements FragPreguntasText
 
     @Override
     public void onRespuestaAudio(boolean correcto) {
+        preguntasJugadas++;
+        if(correcto) {
+            aciertos++;
+            acertadasPreguntas.setText("Aciertos: " + aciertos);
+        }
+        if(preguntasJugadas > numeroDePreguntas){
+            terminarPartida();
+        }else{
+            currentPreguntas.setText("Pregunta: " + preguntasJugadas + "/" + numeroDePreguntas);
+            nuevaPregunta();
+        }
+    }
+
+    @Override
+    public void onRespuestaImagen(boolean correcto) {
         preguntasJugadas++;
         if(correcto) {
             aciertos++;
