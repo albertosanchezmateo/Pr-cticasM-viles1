@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#222222"
+    android:background="@drawable/background"
     tools:context=".FragPreguntaVideo">
 
     <FrameLayout
@@ -24,42 +24,45 @@
     </FrameLayout>
 
     <Button
-        android:id="@+id/botRVideo1"
-        android:layout_width="120dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/boton"
-        android:fontFamily="@font/actor"
-        android:text="Respuesta 1"
-        android:textColor="#989898"
-        app:layout_constraintEnd_toStartOf="@+id/botRVideo2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textoPVideo" />
-
-    <Button
         android:id="@+id/botRVideo2"
-        android:layout_width="120dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/boton"
+        android:layout_width="147dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/boton2"
         android:fontFamily="@font/actor"
         android:text="Respuesta 2"
-        android:textColor="#989898"
+        android:textColor="#FFF"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/botRVideo1"
         app:layout_constraintTop_toBottomOf="@+id/textoPVideo" />
 
     <Button
+        android:id="@+id/botRVideo1"
+        android:layout_width="147dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/boton2"
+        android:fontFamily="@font/actor"
+        android:text="Respuesta 1"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/botRVideo2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoPVideo" />
+
+    <Button
         android:id="@+id/botRVideo3"
-        android:layout_width="120dp"
-        android:layout_height="60dp"
+        android:layout_width="147dp"
+        android:layout_height="99dp"
         android:layout_marginTop="32dp"
-        android:background="@drawable/boton"
+        android:background="@drawable/boton2"
         android:fontFamily="@font/actor"
         android:text="Respuesta 3"
-        android:textColor="#989898"
+        android:textColor="#FFF"
+        android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/botRVideo4"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -67,13 +70,14 @@
 
     <Button
         android:id="@+id/botRVideo4"
-        android:layout_width="120dp"
-        android:layout_height="60dp"
+        android:layout_width="147dp"
+        android:layout_height="99dp"
         android:layout_marginTop="32dp"
-        android:background="@drawable/boton"
+        android:background="@drawable/boton2"
         android:fontFamily="@font/actor"
         android:text="Respuesta 4"
-        android:textColor="#989898"
+        android:textColor="#FFF"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/botRVideo3"
@@ -81,10 +85,12 @@
 
     <TextView
         android:id="@+id/textoPVideo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="310dp"
+        android:layout_height="58dp"
         android:layout_marginTop="20dp"
+        android:background="@drawable/boton"
         android:fontFamily="@font/anton"
+        android:gravity="center"
         android:text="¿Cómo termina esta jugada?"
         android:textAllCaps="true"
         android:textColor="#FFFFFF"

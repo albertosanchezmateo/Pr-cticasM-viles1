@@ -4,8 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#222222"
+    android:background="@drawable/background"
     tools:context=".Ranking">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="412dp"
+        android:layout_height="285dp"
+        android:background="@drawable/boton"
+        app:layout_constraintBottom_toTopOf="@+id/bVolverMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoGanador"
+        app:layout_constraintVertical_bias="0.118" />
 
     <TextView
         android:id="@+id/titulo"
@@ -24,14 +36,15 @@
 
     <TextView
         android:id="@+id/textoGanador"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="404dp"
+        android:layout_height="161dp"
         android:layout_marginTop="32dp"
+        android:background="@drawable/boton"
         android:fontFamily="@font/actor"
+        android:gravity="center"
         android:text="Felicidades Nombre, has acertado pregAcertadas/preguntasJugadas en tiempo segundos, tu puntuacion de aciertos por segundo es de a/s"
-        android:textAlignment="center"
         android:textAllCaps="true"
-        android:textColor="#989898"
+        android:textColor="#FFF"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -40,14 +53,10 @@
 
     <Button
         android:id="@+id/bVolverMenu"
-        android:layout_width="259dp"
-        android:layout_height="46dp"
+        android:layout_width="258dp"
+        android:layout_height="72dp"
         android:layout_marginBottom="36dp"
-        android:background="@drawable/boton"
-        android:text="volver al menu principal"
-        android:textAllCaps="true"
-        android:textColor="#989898"
-        android:textSize="18sp"
+        android:background="@drawable/volver"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -62,7 +71,7 @@
         android:text=""
         android:textAlignment="center"
         android:textAllCaps="true"
-        android:textColor="#989898"
+        android:textColor="#FFF"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,7 +86,7 @@
         android:text=""
         android:textAlignment="center"
         android:textAllCaps="true"
-        android:textColor="#989898"
+        android:textColor="#FFF"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -93,7 +102,7 @@
         android:text=""
         android:textAlignment="center"
         android:textAllCaps="true"
-        android:textColor="#989898"
+        android:textColor="#FFF"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -108,7 +117,7 @@
         android:text=""
         android:textAlignment="center"
         android:textAllCaps="true"
-        android:textColor="#989898"
+        android:textColor="#FFF"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -124,9 +133,10 @@
         android:text=""
         android:textAlignment="center"
         android:textAllCaps="true"
-        android:textColor="#989898"
+        android:textColor="#FFF"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rCuarto" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

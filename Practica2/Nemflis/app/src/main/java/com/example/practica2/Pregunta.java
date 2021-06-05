@@ -29,7 +29,7 @@ public class Pregunta {
 
     public int ruta4;
 
-    /*public Pregunta( int tipoPregunta, String enunciado, String respuesta1, String respuesta2, String respuesta3, String respuesta4, String respuestaCorr) {
+    public Pregunta( int tipoPregunta, String enunciado, String respuesta1, String respuesta2, String respuesta3, String respuesta4, String respuestaCorr) {
 
         this.tipoPregunta = tipoPregunta;
         this.enunciado = enunciado;
@@ -38,8 +38,8 @@ public class Pregunta {
         this.respuesta3 = respuesta3;
         this.respuesta4 = respuesta4;
         this.respuestaCorr = respuestaCorr;
-    }*/
-    public Pregunta( String enunciado, int ruta1, int ruta2, int ruta3, int ruta4, String respuestaCorr, int tipoPregunta){
+    }
+    /*public Pregunta( String enunciado, int ruta1, int ruta2, int ruta3, int ruta4, String respuestaCorr, int tipoPregunta){
         this.tipoPregunta = tipoPregunta;
         this.enunciado = enunciado;
         this.ruta1 = ruta1;
@@ -47,7 +47,7 @@ public class Pregunta {
         this.ruta3 = ruta3;
         this.ruta4 = ruta4;
         this.respuestaCorr = respuestaCorr;
-    }
+    }*/
 
     public int getTipoPregunta() {
         return tipoPregunta;

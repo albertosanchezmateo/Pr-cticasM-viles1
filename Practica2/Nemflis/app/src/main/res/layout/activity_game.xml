@@ -4,8 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#222222"
+    android:background="@drawable/background"
     tools:context=".GameActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="412dp"
+        android:layout_height="118dp"
+        android:background="@drawable/boton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/nomJug"
@@ -68,8 +78,8 @@
 
     <RelativeLayout
         android:id="@+id/layu"
-        android:layout_width="412dp"
-        android:layout_height="547dp"
+        android:layout_width="413dp"
+        android:layout_height="493dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -79,15 +89,12 @@
 
     <Button
         android:id="@+id/botEjemplo"
-        android:layout_width="100dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="104dp"
-        android:background="@drawable/boton"
-        android:fontFamily="@font/actor"
-        android:text="Comenzar"
-        android:textColor="#989898"
+        android:layout_width="271dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="136dp"
+        android:background="@drawable/comenzar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

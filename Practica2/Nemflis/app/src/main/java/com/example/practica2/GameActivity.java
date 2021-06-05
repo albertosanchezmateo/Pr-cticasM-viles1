@@ -99,7 +99,7 @@ public class GameActivity extends AppCompatActivity implements FragPreguntasText
         String path9 = "android.resource://" + getPackageName() + "/" + R.raw.piratas;
         String path10 = "android.resource://" + getPackageName() + "/" + R.raw.cazafantasmas;
         int path11 = R.drawable.morgana;
-        /*Pregunta p1 = new Pregunta(0, "¿A que se dedica Salvatore cuando es adulto en la pelicula Cinema Paradiso?", "Reportero", "Director de cine", "Arquitecto", "Fotógrafo", "Director de cine");
+        Pregunta p1 = new Pregunta(0, "¿A que se dedica Salvatore cuando es adulto en la pelicula Cinema Paradiso?", "Reportero", "Director de cine", "Arquitecto", "Fotógrafo", "Director de cine");
         Pregunta p2 = new Pregunta(0, "¿Quién interpreta a Jimmy en la pelicula Pulp Fiction?", "Samuel L Jackson", "John Travolta", "Quentin Tarantino", "Bruce Willis", "Quentin Tarantino");
         Pregunta p3 = new Pregunta(0, "¿Qué pelicula de ciencia ficcion postapocaliptica ha protagonizado Tom Hardy?", "Mad Max", "Venom", "El caballero oscuro", "Seven", "Mad Max");
         Pregunta p4 = new Pregunta(0, "¿Con que pelicula ganó un Óscar Leonardo Di Caprio?", "Titanic", "Django: Desencadenado", "El Renacido", "El lobo de Wall street", "El Renacido");
@@ -118,10 +118,9 @@ public class GameActivity extends AppCompatActivity implements FragPreguntasText
         Pregunta p17 = new Pregunta(2, path7, "La vida de Brian", "Shrek", "Los caballeros de la mesa cuadrada", "El sentido de la vida", "La vida de Brian");
         Pregunta p18 = new Pregunta(2, path8, "Matilda", "Narnia", "Harry Potter", "Polar Express", "Harry Potter");
         Pregunta p19 = new Pregunta(2, path9, "Indiana Jones", "Piratas del Caribe", "Los Vengadores", "Fast & Furious", "Piratas del Caribe");
-        Pregunta p20 = new Pregunta(2, path10, "GhostBusters ", "Atrapado en el tiempo", "Gordy", "Misión Imposible", "GhostBusters");*/
-        Pregunta p21 = new Pregunta("asfdagagadgadgfasfas", path11, path11, path11,path11, "1", 3);
+        Pregunta p20 = new Pregunta(2, path10, "GhostBusters ", "Atrapado en el tiempo", "Gordy", "Misión Imposible", "GhostBusters");
 
-        /*baseDeDatos.preguntaDao().insert(p1);
+        baseDeDatos.preguntaDao().insert(p1);
         baseDeDatos.preguntaDao().insert(p2);
         baseDeDatos.preguntaDao().insert(p3);
         baseDeDatos.preguntaDao().insert(p4);
@@ -140,8 +139,7 @@ public class GameActivity extends AppCompatActivity implements FragPreguntasText
         baseDeDatos.preguntaDao().insert(p17);
         baseDeDatos.preguntaDao().insert(p18);
         baseDeDatos.preguntaDao().insert(p19);
-        baseDeDatos.preguntaDao().insert(p20);*/
-        baseDeDatos.preguntaDao().insert(p21);
+        baseDeDatos.preguntaDao().insert(p20);
     }
 
     public void nuevaPregunta(){

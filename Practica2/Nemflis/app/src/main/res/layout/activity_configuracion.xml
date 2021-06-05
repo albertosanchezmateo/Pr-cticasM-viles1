@@ -4,8 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#222222"
+    android:background="@drawable/background"
     tools:context=".Configuracion">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="172dp"
+        android:layout_height="124dp"
+        android:background="#0c001e"
+        app:layout_constraintBottom_toTopOf="@+id/texto2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto1" />
 
     <RadioGroup
         android:id="@+id/numPreguntas"
@@ -50,12 +60,13 @@
         android:layout_width="334dp"
         android:layout_height="91dp"
         android:layout_marginTop="40dp"
+        android:background="@drawable/boton"
         android:fontFamily="@font/actor"
+        android:gravity="center"
         android:text="Selecciona cuantas preguntas quieres que tenga la partida"
-        android:textAlignment="center"
         android:textAllCaps="true"
-        android:textColor="#989898"
-        android:textSize="24sp"
+        android:textColor="#FFF"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
@@ -78,14 +89,17 @@
 
     <TextView
         android:id="@+id/texto2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="247dp"
+        android:layout_height="40dp"
         android:layout_marginTop="40dp"
-        android:fontFamily="@font/actor"
+        android:fontFamily="@font/anton"
+        android:gravity="center"
         android:text="Introduce tu nombre"
+        android:background="#0c001e"
         android:textAllCaps="true"
-        android:textColor="#989898"
+        android:textColor="#FFF"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/numPreguntas" />
@@ -103,4 +117,5 @@
         app:layout_constraintTop_toBottomOf="@+id/inputNombre"
         app:layout_constraintVertical_bias="0.973"
         app:srcCompat="?attr/homeAsUpIndicator" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
