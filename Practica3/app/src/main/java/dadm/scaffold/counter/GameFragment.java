@@ -124,13 +124,13 @@ public class GameFragment extends BaseFragment implements View.OnClickListener {
     public static void ganarPuntos(){
         switch (dificultad){
             case 1:
-                puntuacion += 20;
+                puntuacion += 100;
                 break;
             case 3:
-                puntuacion += 15;
+                puntuacion += 200;
                 break;
             case 5:
-                puntuacion += 10;
+                puntuacion += 300;
                 break;
         }
         scoreListener.onScoreListener(puntuacion);

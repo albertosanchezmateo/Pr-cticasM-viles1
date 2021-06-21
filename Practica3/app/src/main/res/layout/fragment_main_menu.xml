@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/fondo_menu_principal" />
+        app:srcCompat="@drawable/fondo_menu" />
 
     <TextView
         android:id="@+id/textView"
@@ -27,61 +27,62 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="44dp"
         android:fontFamily="@font/rubik_mono_one"
-        android:text="LOS MARCIANITOS"
+        android:text="ALIEN EXTERMINATION"
         android:textColor="#FDFDFD"
+        app:layout_constraintBottom_toTopOf="@+id/btn_easy"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btn_easy"
-        android:layout_width="wrap_content"
+        android:layout_width="120sp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="124dp"
         android:background="@drawable/bot_facil"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_medium"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btn_hard"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="124dp"
+        android:background="@drawable/bot_dificil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_medium"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_medium"
-        android:layout_width="wrap_content"
+        android:layout_width="120sp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="124dp"
         android:background="@drawable/bot_medio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_hard"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btn_easy"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <Button
-        android:id="@+id/btn_hard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="56dp"
-        android:background="@drawable/bot_dificil"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btn_medium"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
 
     <ImageButton
         android:id="@+id/btn_nave2"
         android:layout_width="131dp"
         android:layout_height="126dp"
         android:layout_marginTop="72dp"
-        android:background="@drawable/bot_vacio"
-        android:paddingLeft="10sp"
-        android:paddingTop="12sp"
-        android:paddingRight="10sp"
-        android:paddingBottom="10sp"
+        android:background="@drawable/button_fondo"
+        android:paddingLeft="30sp"
+        android:paddingTop="30sp"
+        android:paddingRight="30sp"
+        android:paddingBottom="30sp"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toStartOf="@+id/btn_nave3"
         app:layout_constraintHorizontal_bias="0.5"
@@ -94,11 +95,11 @@
         android:layout_width="131dp"
         android:layout_height="124dp"
         android:layout_marginTop="72dp"
-        android:background="@drawable/bot_vacio"
-        android:paddingLeft="10sp"
-        android:paddingTop="10sp"
-        android:paddingRight="10sp"
-        android:paddingBottom="10sp"
+        android:background="@drawable/button_fondo"
+        android:paddingLeft="30sp"
+        android:paddingTop="30sp"
+        android:paddingRight="30sp"
+        android:paddingBottom="30sp"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toStartOf="@+id/btn_nave2"
         app:layout_constraintHorizontal_bias="0.5"
@@ -111,11 +112,11 @@
         android:layout_width="130dp"
         android:layout_height="126dp"
         android:layout_marginTop="72dp"
-        android:background="@drawable/bot_vacio"
-        android:paddingLeft="10sp"
-        android:paddingTop="10sp"
-        android:paddingRight="10sp"
-        android:paddingBottom="10sp"
+        android:background="@drawable/button_fondo"
+        android:paddingLeft="30sp"
+        android:paddingTop="30sp"
+        android:paddingRight="30sp"
+        android:paddingBottom="30sp"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -127,7 +128,7 @@
         android:id="@+id/textView2"
         android:layout_width="218dp"
         android:layout_height="30dp"
-        android:layout_marginTop="136dp"
+        android:layout_marginTop="176dp"
         android:fontFamily="@font/rubik_mono_one"
         android:text="ESCOGE TU NAVE"
         android:textAllCaps="true"
@@ -135,6 +136,7 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 

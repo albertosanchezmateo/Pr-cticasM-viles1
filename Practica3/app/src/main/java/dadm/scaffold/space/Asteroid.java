@@ -1,5 +1,7 @@
 package dadm.scaffold.space;
 
+import java.util.Random;
+
 import dadm.scaffold.R;
 import dadm.scaffold.engine.GameEngine;
 import dadm.scaffold.engine.ScreenGameObject;
@@ -16,6 +18,7 @@ public class Asteroid extends Sprite {
 
     public Asteroid(GameController gameController, GameEngine gameEngine) {
         super(gameEngine, R.drawable.a10000);
+
         this.speed = 200d * pixelFactor/1000d;
         this.gameController = gameController;
     }
@@ -29,8 +32,8 @@ public class Asteroid extends Sprite {
         positionX = gameEngine.random.nextInt(gameEngine.width/2)+gameEngine.width/4;
         // They initialize outside of the screen vertically
         positionY = -height;
-        rotationSpeed = angle*(180d / Math.PI)/250d; // They rotate 4 times their ange in a second.
-        rotation = gameEngine.random.nextInt(360);
+        rotationSpeed = 0; // They rotate 4 times their ange in a second.
+        rotation = 0;
     }
 
     @Override
