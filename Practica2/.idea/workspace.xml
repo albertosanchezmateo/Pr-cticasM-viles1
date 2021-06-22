@@ -22,7 +22,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Practica3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/LolQuizz" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -38,9 +38,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1061" y="455" key="FileChooserDialogImpl" timestamp="1624374912111">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="796" y="338" key="FileChooserDialogImpl" timestamp="1624383191081">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="796" y="338" key="FileChooserDialogImpl/0.0.1920.1040/1920.5.1920.1040@0.0.1920.1040" timestamp="1624383191081" />
     <state x="1061" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1624374912111" />
   </component>
 </project>

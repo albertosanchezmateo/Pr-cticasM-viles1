@@ -7,7 +7,7 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
 @Database(
-        entities = Pregunta.class, version = 1
+        entities = Pregunta.class, version = 2
 )
 
 public abstract class PreguntasDB extends RoomDatabase {

@@ -23,25 +23,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/botRespuesta3"
-        android:layout_width="147dp"
-        android:layout_height="99dp"
-        android:layout_marginTop="76dp"
-        android:background="@drawable/boton2"
-        android:fontFamily="@font/actor"
-        android:text="3"
-        android:textColor="#989898"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/botRespuesta4"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botRespuesta1" />
-
-    <Button
         android:id="@+id/botRespuesta1"
         android:layout_width="147dp"
         android:layout_height="99dp"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="68dp"
         android:background="@drawable/boton2"
         android:fontFamily="@font/actor"
         android:text="1"
@@ -53,25 +38,10 @@
         app:layout_constraintTop_toBottomOf="@+id/enunciadoTexto" />
 
     <Button
-        android:id="@+id/botRespuesta2"
-        android:layout_width="147dp"
-        android:layout_height="99dp"
-        android:layout_marginTop="132dp"
-        android:background="@drawable/boton2"
-        android:fontFamily="@font/actor"
-        android:text="2"
-        android:textStyle="bold"
-        android:textColor="#989898"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/botRespuesta1"
-        app:layout_constraintTop_toBottomOf="@+id/enunciadoTexto" />
-
-    <Button
         android:id="@+id/botRespuesta4"
         android:layout_width="147dp"
         android:layout_height="99dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/boton2"
         android:fontFamily="@font/actor"
         android:text="4"
@@ -81,4 +51,35 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/botRespuesta3"
         app:layout_constraintTop_toBottomOf="@+id/botRespuesta2" />
+
+    <Button
+        android:id="@+id/botRespuesta3"
+        android:layout_width="147dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/boton2"
+        android:fontFamily="@font/actor"
+        android:text="3"
+        android:textColor="#989898"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/botRespuesta4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botRespuesta1" />
+
+    <Button
+        android:id="@+id/botRespuesta2"
+        android:layout_width="147dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/boton2"
+        android:fontFamily="@font/actor"
+        android:text="2"
+        android:textColor="#989898"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botRespuesta1"
+        app:layout_constraintTop_toBottomOf="@+id/enunciadoTexto" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

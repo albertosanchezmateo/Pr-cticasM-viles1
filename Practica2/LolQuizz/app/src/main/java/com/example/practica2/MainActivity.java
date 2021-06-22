@@ -82,11 +82,11 @@ public class MainActivity extends AppCompatActivity{
             if(nombreJugador.equals("")){
                 nombreJugador = "Anonimo";
             }
-            nJugador.setText("Estas registrado como " + nombreJugador);
+            nJugador.setText(nombreJugador);
         } catch (FileNotFoundException e) {
             nombreJugador = "Anonimo";
             numeroPreguntas = "5";
-            nJugador.setText("Estas registrado como Anonimo");
+            nJugador.setText("Anonimo");
             nPreguntas.setText("Vas a jugar a 5 preguntas");
         } catch (IOException e) {
             e.printStackTrace();
@@ -101,9 +101,9 @@ public class MainActivity extends AppCompatActivity{
                 nombreJugador = data.getStringExtra("nombreJugador");
                 if(nombreJugador.length() < 1){
                     nombreJugador = "Anonimo";
-                    nJugador.setText("Estas registrado como Anonimo");
+                    nJugador.setText("Anonimo");
                 }else{
-                    nJugador.setText("Estas registrado como " + nombreJugador);
+                    nJugador.setText(nombreJugador);
                 }
                 numeroPreguntas = data.getStringExtra("numeroPreguntas");
                 nPreguntas.setText("Vas a jugar a " + numeroPreguntas  + " preguntas");

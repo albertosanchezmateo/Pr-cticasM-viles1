@@ -11,7 +11,7 @@
         android:id="@+id/botRAudio1"
         android:layout_width="147dp"
         android:layout_height="99dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/boton2"
         android:fontFamily="@font/actor"
         android:text="respuesta 1"
@@ -23,10 +23,25 @@
         app:layout_constraintTop_toBottomOf="@+id/t_viewAudio" />
 
     <Button
+        android:id="@+id/botRAudio2"
+        android:layout_width="147dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/boton2"
+        android:fontFamily="@font/actor"
+        android:text="respuesta 2"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botRAudio1"
+        app:layout_constraintTop_toBottomOf="@+id/t_viewAudio" />
+
+    <Button
         android:id="@+id/botRAudio4"
         android:layout_width="147dp"
         android:layout_height="99dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/boton2"
         android:fontFamily="@font/actor"
         android:text="respuesta 4"
@@ -41,7 +56,7 @@
         android:id="@+id/botRAudio3"
         android:layout_width="147dp"
         android:layout_height="99dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/boton2"
         android:fontFamily="@font/actor"
         android:text="respuesta 3"
@@ -51,21 +66,6 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/botRAudio1" />
-
-    <Button
-        android:id="@+id/botRAudio2"
-        android:layout_width="147dp"
-        android:layout_height="99dp"
-        android:layout_marginTop="120dp"
-        android:background="@drawable/boton2"
-        android:fontFamily="@font/actor"
-        android:text="respuesta 2"
-        android:textColor="#FFF"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/botRAudio1"
-        app:layout_constraintTop_toBottomOf="@+id/t_viewAudio" />
 
     <TextView
         android:id="@+id/t_viewAudio"

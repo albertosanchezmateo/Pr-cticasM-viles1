@@ -27,7 +27,7 @@
         android:id="@+id/botRVideo2"
         android:layout_width="147dp"
         android:layout_height="99dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/boton2"
         android:fontFamily="@font/actor"
         android:text="Respuesta 2"
@@ -42,7 +42,7 @@
         android:id="@+id/botRVideo1"
         android:layout_width="147dp"
         android:layout_height="99dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/boton2"
         android:fontFamily="@font/actor"
         android:text="Respuesta 1"
@@ -54,25 +54,10 @@
         app:layout_constraintTop_toBottomOf="@+id/textoPVideo" />
 
     <Button
-        android:id="@+id/botRVideo3"
-        android:layout_width="147dp"
-        android:layout_height="99dp"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/boton2"
-        android:fontFamily="@font/actor"
-        android:text="Respuesta 3"
-        android:textColor="#FFF"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/botRVideo4"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botRVideo1" />
-
-    <Button
         android:id="@+id/botRVideo4"
         android:layout_width="147dp"
         android:layout_height="99dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/boton2"
         android:fontFamily="@font/actor"
         android:text="Respuesta 4"
@@ -82,6 +67,22 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/botRVideo3"
         app:layout_constraintTop_toBottomOf="@+id/botRVideo2" />
+
+    <Button
+        android:id="@+id/botRVideo3"
+        android:layout_width="147dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/boton2"
+        android:fontFamily="@font/actor"
+        android:text="Respuesta 3"
+        android:gravity="center"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/botRVideo4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botRVideo1" />
 
     <TextView
         android:id="@+id/textoPVideo"
