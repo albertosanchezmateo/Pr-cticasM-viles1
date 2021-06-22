@@ -51,17 +51,17 @@ public final class SoundManager {
 	private void loadSounds() {
 		createSoundPool();
 		soundsMap = new HashMap<GameEvent, Integer>();
-		loadEventSound(context, GameEvent.AsteroidHit, "Asteroid_explosion_1.wav");
-		loadEventSound(context, GameEvent.SpaceshipHit, "Spaceship_explosion.wav");
-		loadEventSound(context, GameEvent.LaserFired, "Laser_shoot.wav");
+		loadEventSound(context, GameEvent.AsteroidHit, "explosionAlien.wav");
+		loadEventSound(context, GameEvent.SpaceshipHit, "golpeNave.wav");
+		loadEventSound(context, GameEvent.LaserFired, "laser.wav");
 	}
 
 	private void loadMusic() {
 		try {
 			// Important to not reuse it. It can be on a strange state
 			bgPlayer = new MediaPlayer();
-			afdMenu = context.getAssets().openFd("sfx/musica_menu.mp3");
-			afdJuego = context.getAssets().openFd("sfx/musica_juego.mp3");
+			afdMenu = context.getAssets().openFd("sfx/bsoMenu.mp3");
+			afdJuego = context.getAssets().openFd("sfx/bsoJuego.mp3");
 		}
 		catch (IOException e) {
 			e.printStackTrace();
