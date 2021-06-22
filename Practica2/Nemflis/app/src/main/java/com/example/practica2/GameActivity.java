@@ -103,7 +103,7 @@ public class GameActivity extends AppCompatActivity implements FragPreguntasText
         String path13 = "android.resource://" + getPackageName() + "/" + R.raw.misfits;
         String path14 = "android.resource://" + getPackageName() + "/" + R.raw.ig;
         String path15 = "android.resource://" + getPackageName() + "/" + R.raw.zoe;
-        int path11 = R.drawable.morgana;
+
         Pregunta p1 = new Pregunta(0, "¿Cuál de estas siglas no corresponde a una liga?", "LCS", "LCK", "LEL", "LPL", "LEL");
         Pregunta p2 = new Pregunta(0, "¿Qué jugador no ha jugado nunca en Fnatic?", "Soaz", "Xpekee", "Bwipo", "Ocelote", "Ocelote");
         Pregunta p3 = new Pregunta(0, "¿Cuántos torneos Worlds han habido en la historia?", "10", "15", "5", "0", "10");
@@ -125,7 +125,7 @@ public class GameActivity extends AppCompatActivity implements FragPreguntasText
         Pregunta p19 = new Pregunta(2, path9, "Kai Sa", "Kog Maw", "Rek Sai", "Kha Zix", "Rek Sai");
         Pregunta p20 = new Pregunta(2, path10, "Oriana ", "Camille", "Vi", "Caitlyn", "Oriana");
         Pregunta p21 = new Pregunta(1, path11, "Faker muere","Ryu muere","Ambos mueren","Ambos sobreviven","Ryu muere");
-        Pregunta p22 = new Pregunta(1, path12, "Xpekee gana","Xpeke muere","Xpeke muere pero consigue ganar","Gana el equipo rival","Xpekee gana");
+        Pregunta p22 = new Pregunta(1, path12, "Xpeke gana","Xpeke muere","Xpeke muere pero consigue ganar","Gana el equipo rival","Xpeke gana");
         Pregunta p23 = new Pregunta(1, path13, "Mueren los dos adcs","Mueren los dos supports","Muere la bot de SKT","Muere la bot de Misfits","Muere la bot de SKT");
         Pregunta p24 = new Pregunta(1, path14, "Lwx sobrevive","Lwx gana la partida","IG gana","Ninguno consigue terminar","IG gana");
         Pregunta p25 = new Pregunta(1, path15, "Xayah muere","Ninguno muere","Ambos mueren","Zoe muere","Zoe muere");
